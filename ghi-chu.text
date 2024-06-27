@@ -1,0 +1,42 @@
+1. Routing 
+routes/web.php
+
+2. Controller 
+app/Http/Controllers/
+
+3. Model
+app/
+
+4. View
+resources/views/
+
+5. Cấu hình hệ thống
+config/
+
+6.Cấu hình kết nối database/ email
+.env
+
+7. Tạo database
+database/migrations
+     //thằng nào chứa khóa ngoại thì thằng đó dùng belongsTo
+...
+
+Phần 8: Migration database
+- Migration là 1 hệ thống quản lý Db, giúp ta tạo db, thêm, sửa , xóa lưu trữ, chia sẻ cho ng khác và nó còn lưu lại đc lịch sử sửa đổi db của ta 
+- Cấu trúc thư mục chứa: database/migrations
+
+- Câu lệnh: 
+    + php artisan make:migration create_posts_table: tạo ra một migration mới(Tên này thường được đặt theo một quy ước nhất định, vd: create_[table_name]_table.)
+
+    + php artisan migrate: chạy tất cả migration/các bảng mới sẽ đc tạo trong csdl
+    + php artisan migrate:rollback: Khôi phục lệnh tạo bảng từ bước trước
+    + php artisan migrate:rollback --step=5: Khôi phục lại CSDL từ một bước cụ thể
+    + php artisan migrate:refresh: Chạy lại toàn bộ migrate (tất cả bảng đều biến thành batch 1)
+    + php artisan migrate:reset: Reset toàn bộ thao tác trên migrate
+
+    + php artisan make:migration add_gender_to_users_table --table=users: thêm cột vào một bảng đã tồn tại
+
+Phần 10: Eloquent ORM Db
+- 2 cách tạo model: 
+    + php artisan make:model Post: tạo model Post
+    + php artisan make:model Order -m: tạo model Order và migrate của order 

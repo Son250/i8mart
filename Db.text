@@ -1,0 +1,67 @@
+1. bảng users (thành viên quản lý website và khách hàng)
+    - id: unsignedBigInteger(20)
+    - name: varchar 255    : Họ và tên
+    - email: varchar 255
+    - password: varchar 255
+    - phone_number: varchar 20 
+    - address: varchar 255 
+    - created_at : timestamp
+    - updated_at : timestamp
+    - deleted_at : timestamp
+
+
+
+2. Bảng product_categories: danh mục 
+    - id: unsignedBigInteger 20
+    - name: varchar 255
+    - slug: varchar 255  null
+    - description: varchar 255 null
+    - user_id: unsignedBigInteger 20  - Khóa ngoại
+    - parent_id : enum('Điện thoại', 'Laptop', 'Màn hình); null
+   
+
+3. Bảng product: sản phẩm
+    - id: unsignedBigInteger 20 - Khóa chính
+    - name: varchar 255
+    - slug : varchar 255 null
+    - description: text
+    - price: int 11
+    - quantity: int 11   (số lượng)  => status : hết hàng/ còn hàng
+    - user_id: unsignedBigInteger 20    - Khóa ngoại
+    - category_id : unsignedBigInteger 20   - Khóa ngoại
+ 
+
+4. Bảng images: hình ảnh sp
+    - id : unsignedBigInteger 20  - khóa chính
+    - image_url: varchar 100 : link ảnh
+    - product_id : unsignedBigInteger 20 - Khóa ngoại
+    
+  
+
+6. Bảng orders (bảng đơn hàng đặt)
+    - id: unsignedBigInteger 20
+    - product_quantity: integer 10  -   Số lượng sản phẩm
+    - total_amount: integer 11 - Tổng tiền
+    - order_date: timestamp  -  ngày đặt
+    - payment_method: enum('COD'/'ONLINE') 
+    - shipping_address: varchar(255)    -  Địa chỉ ship hàng
+    - status: enum( 'Chờ xác nhận', 'Đã xác nhận', 'Đang giao hàng', 'Hoàn thành', 'Hủy đơn')
+    - customer_id: unsignedBigInteger 20  - Khóa phụ - Khách hàng đặt
+  
+
+
+7. Bảng order_items : Bảng chi tiết đơn hàng
+    - id: unsignedBigInteger 20
+    - order_id : unsignedBigInteger 20 -    Khóa ngoại: id đơn hàng
+    - product_id : unsignedBigInteger 20 - Khóa ngoại : id sản phẩm
+    - quantity : integer 3 - số lượng
+    - price : integer 11 - giá
+    
+8. Bảng cart : giỏ hàng
+    - id : khóa chính
+    - user_id:  id người mua
+    - product_id: id sản phẩm
+    - quantity :  số lượng trong giỏ hàng
+
+
+         //thằng nào chứa khóa ngoại thì thằng đó dòng belongsTo

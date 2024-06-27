@@ -1,0 +1,156 @@
+.orderStatus table thead tr a {
+    color: black;
+    transition: all 0.5s;
+}
+
+.orderStatus table thead tr a:hover {
+    color: rgb(218, 7, 7);
+}
+
+.nav_donmua ul {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    background: aliceblue;
+    margin-top: 30px;
+}
+
+.nav_donmua ul li a {
+    text-transform: initial;
+    color: black;
+    font-size: 15px;
+}
+
+.nav_donmua ul li a:hover {
+    /* text-transform: initial; */
+    color: orange;
+}
+
+.product_donmua .trang_thai ul {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+
+}
+
+.product_donmua {
+    margin: 0px 30px 20px 30px;
+}
+
+/* .product_donmua hr {
+    color: #9C9C9C;
+} */
+
+.product_donmua .trang_thai ul li a {
+    color: black;
+    font-weight: 600;
+}
+
+.product_donmua .trang_thai ul li a span {
+    color: #10ca10;
+}
+
+.product_mua {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_mua ._prod img {
+    width: 70px;
+    border: 1px solid rgb(197, 197, 197);
+
+}
+
+
+._prod {
+    display: flex;
+    margin-top: 10px;
+}
+
+._prod .name_prod {
+    margin-left: 15px;
+}
+
+._prod .phan_loai {
+    color: #7e7e7e;
+    font-size: 14px;
+    text-align: left;
+}
+
+._prod .so_luong {
+    color: #3e3e3e;
+    font-size: 14px;
+    text-align: left;
+}
+
+.product_mua .price_prod .price {
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.product_mua .price_prod .price span:first-child {
+    text-decoration: line-through;
+    color: #7e7e7e;
+}
+
+.product_mua .price_prod .price span:last-child {
+    /* text-decoration: line-through; */
+    color: red;
+}
+
+.product_donmua .thanh_tien {
+    display: flex;
+    justify-content: end;
+}
+
+.product_donmua .thanh_tien span {
+    color: red;
+    font-size: 19px;
+}
+
+.btn_mua_lai {
+    /* margin-top: 5px; */
+    margin-right: 20px;
+    display: flex;
+}
+
+/* .btn_mua_lai div form a button {
+    background-color: rgb(255, 241, 241);
+    border: none;
+} */
+
+.product_donmua .mua_lai {
+    padding: 8px 25px 8px 25px;
+    background-color: rgb(228, 13, 13);
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+    border: 0px;
+}
+
+.product_donmua .mua_lai:hover {
+    padding: 8px 25px 8px 25px;
+
+    background-color: rgb(202, 13, 13);
+
+}
+
+.product_donmua .lien_he_cua_hang {
+    padding: 8px 25px 8px 25px;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+/* .product_donmua .lien_he_cua_hang:hover {
+    padding: 10px 25px 10px 25px;
+
+    background-color: rgb(202, 13, 13);
+
+} */

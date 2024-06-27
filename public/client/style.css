@@ -1,0 +1,39 @@
+/*STYLE*/
+/* @import '../public/css/import/fonts.css';
+@import '../public/css/import/global.css';
+@import '../public/css/import/header.css';
+@import '../public/css/import/footer.css';
+@import '../public/css/import/home.css';
+@import '../public/css/import/category_product.css';
+@import '../public/css/import/blog.css';
+@import '../public/css/import/detail_product.css';
+@import '../public/css/import/detail_blog.css';
+@import '../public/css/import/cart.css';
+@import '../public/css/import/checkout.css'; */
+
+@import '/css/import/fonts.css';
+@import 'css/import/global.css';
+@import 'css/import/header.css';
+@import 'css/import/footer.css';
+@import 'css/import/home.css';
+@import 'css/import/category_product.css';
+@import 'css/import/blog.css';
+@import 'css/import/detail_product.css';
+@import 'css/import/detail_blog.css';
+@import 'css/import/cart.css';
+@import 'css/import/checkout.css';
+@import 'css/import/order_status.css';
+/* 
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/fonts.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/home.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css';
+@import 'http://localhost/unitop.vn/LaravelPro/i8mart/public/client/css/import/global.css'; */
+
+/*  */
